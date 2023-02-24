@@ -5,11 +5,11 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-set(CMAKE_PREFIX_PATH "C:/QT/5.15.2/mingw81_64/lib/cmake")
+set(CMAKE_PREFIX_PATH "C:/Qt/5.15.2/mingw81_64/lib/cmake")
 
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
-add_executable(image-blur main.cpp mainwindow.cpp  ${MY_INCLUDE_DIR}/mainwindow.h)
+add_executable(image-blur main.cpp mainwindow.cpp  ${MY_INCLUDE_DIR}/mainwindow.h caller.cpp)
 
 target_include_directories(image-blur PUBLIC ${MY_INCLUDE_DIR})
 

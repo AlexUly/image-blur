@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
     QString filename;
 
     QObject::connect(button, &QPushButton::clicked, [&filename, &label]{
-        filename = QFileDialog::getOpenFileName(nullptr, "open img", "./C", "Images (*.png *.xpm *.jpg)");
+        filename = QFileDialog::getOpenFileName(nullptr, "open image", "./C", "Images (*.png *.xpm *.jpg *.jfif)");
         QPixmap img(filename);
         label->setPixmap(img);
     });
